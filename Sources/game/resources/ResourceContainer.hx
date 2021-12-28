@@ -9,17 +9,21 @@ class ResourceContainer {
 	public var type:ResourceType;
 	public var amount:Int;
 
-	public var productionTime:Float;
+	private var isProduced:Bool;
 
 
-
-	public function new (type:ResourceType, amount:Int, productionTime:Float) {
+	public function new (type:ResourceType, amount:Int) {
 		this.type = type;
 		this.amount = amount;
-		this.productionTime = productionTime;
+		this.isProduced = false;
 	}
 
 	public function collect() {
 		GameManager.instance.resourceContainerManager.collect(this);
+		isProduced = false;
+	}
+
+	public function setProduced() {
+		isProduced = true;
 	}
 }

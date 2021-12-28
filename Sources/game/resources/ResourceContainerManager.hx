@@ -1,9 +1,9 @@
 package game.resources;
 
 class ResourceContainerManager {
-	public var onResourceContainerCreated:Array<ResourceContainer->Void>;
-	public var onResourceContainerProduced:Array<ResourceContainer->Void>;
-	public var onResourceContainerCollected:Array<ResourceContainer->Void>;
+	private var onResourceContainerCreated:Array<ResourceContainer->Void>;
+	private var onResourceContainerProduced:Array<ResourceContainer->Void>;
+	private var onResourceContainerCollected:Array<ResourceContainer->Void>;
 
 
 

@@ -5,12 +5,11 @@ import kha.Assets;
 import kha.Scheduler;
 
 class Main {
-
 	public static function main() {
 		var options = new SystemOptions();
 		options.title = "Test-Project";
-		options.width = 1024;
-		options.height = 768;
+		options.width = 400;
+		options.height = 400;
 
 		System.start(options, onStart);
 	}
